@@ -42,6 +42,7 @@ jobs:
       - name: Push to Docker Hub
         uses: docker/build-push-action@v2 
         with:
+          context: ./api_yamdb
           push: true
           tags: daria7ztv/yamdb:latest
   deploy:
@@ -58,6 +59,7 @@ jobs:
         script: |
           sudo docker-compose stop
           sudo docker-compose rm web
+          sudo docker pull ${{ secrets.DOCKER_USERNAME }}/yamdb:latest
           touch .env
           echo DB_ENGINE=${{ secrets.DB_ENGINE }} >> .env
           echo DB_NAME=${{ secrets.DB_NAME }} >> .env
@@ -76,4 +78,3 @@ jobs:
         to: ${{ secrets.TELEGRAM_TO }}
         token: ${{ secrets.TELEGRAM_TOKEN }}
         message: ${{ github.workflow }} успешно выполнен!
-
