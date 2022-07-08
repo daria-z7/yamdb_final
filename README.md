@@ -1,6 +1,5 @@
 ##  Проект "API_YaMDb"
 
-![example workflow](https://github.com/daria-z7/yamdb_final/actions/workflows/yamdb_worflow.yml/badge.svg)
 [![Actions Status](https://github.com/daria-z7/yamdb_final/workflows/Django-app%20workflow/badge.svg)](https://github.com/daria-z7/yamdb_final/actions)
 
 ### Описание проекта:
