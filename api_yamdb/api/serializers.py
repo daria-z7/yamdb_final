@@ -2,7 +2,6 @@ from django.utils import timezone
 from rest_framework import serializers, status
 from rest_framework.relations import SlugRelatedField
 from rest_framework.validators import UniqueValidator
-
 from reviews.models import Categories, Comment, Genres, Review, Title, User
 
 

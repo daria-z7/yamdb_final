@@ -1,11 +1,8 @@
 from datetime import datetime
 
 from django.contrib.auth.models import AbstractUser
-from django.core.validators import (
-    MaxValueValidator,
-    MinValueValidator,
-    RegexValidator
-)
+from django.core.validators import (MaxValueValidator, MinValueValidator,
+                                    RegexValidator)
 from django.db import models
 
 
@@ -29,12 +26,6 @@ class User(AbstractUser):
         max_length=150,
         null=True,
         unique=True,
-        #validators=(
-        #    RegexValidator(
-        #        regex=r'^[\w.@+-]+\z)',
-        #        message='Используйте только буквы, цифры и символы:@/./+/-/_'
-        #    ),
-        #)
     )
     role = models.CharField(
         verbose_name='Роль',

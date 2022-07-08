@@ -1,3 +1,12 @@
+from api.filter import TitleFilterSet
+from api.mixins import CreateListDestroyViewSet
+from api.permissions import (IsAdmin, IsAdminOrReadOnly,
+                             IsAuthorOrManagerOrReadOnly)
+from api.serializers import (CategoriesSerializer, CommentSerializer,
+                             GenresSerializer, RegisterDataSerializer,
+                             ReviewSerializer, TitleReadSerializer,
+                             TitleWriteSerializer, TokenSerializer,
+                             UserEditSerializer, UserSerializer)
 from django.contrib.auth.tokens import default_token_generator
 from django.core.mail import send_mail
 from django.db.models import Avg
@@ -9,15 +18,6 @@ from rest_framework.response import Response
 from rest_framework_simplejwt.tokens import AccessToken
 from reviews.models import Categories, Genres, Review, Title, User
 
-from api.filter import TitleFilterSet
-from api.mixins import CreateListDestroyViewSet
-from api.permissions import (IsAdmin, IsAdminOrReadOnly,
-                             IsAuthorOrManagerOrReadOnly)
-from api.serializers import (CategoriesSerializer, CommentSerializer,
-                             GenresSerializer, RegisterDataSerializer,
-                             ReviewSerializer, TitleReadSerializer,
-                             TitleWriteSerializer, TokenSerializer,
-                             UserEditSerializer, UserSerializer)
 from api_yamdb.settings import DEFAULT_FROM_EMAIL
 
 
