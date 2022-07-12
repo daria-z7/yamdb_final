@@ -1,0 +1,6 @@
+id,password,last_login,is_superuser,first_name,last_name,is_staff,is_active,date_joined,email,username,role,bio
+100,qwerty,,false,first_name1,last_name1,false,true,2001-01-01T00:00:00.000Z,bingobongo@yamdb.fake,bingobongo,user,
+101,asdf,,false,first_name2,last_name2,false,true,2001-01-01T00:00:00.000Z,capt_obvious@yamdb.fake,capt_obvious,admin,
+102,zxcv,,false,first_name3,last_name3,false,true,2001-01-01T00:00:00.000Z,faust@yamdb.fake,faust,user,
+103,uiop,,false,first_name4,last_name4,false,true,2001-01-01T00:00:00.000Z,reviewer@yamdb.fake,reviewer,user,
+104,hjkl,,false,first_name5,last_name5,false,true,2001-01-01T00:00:00.000Z,angry@yamdb.fake,angry,moderator,
