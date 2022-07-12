@@ -1,6 +1,15 @@
 ##  Проект "API_YaMDb"
 
 ![Actions Status](https://github.com/daria-z7/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
+```
+http://62.84.123.173/api/v1/
+```
+```
+http://62.84.123.173/admin
+```
+```
+http://62.84.123.173/redoc
+```
 
 ### Описание проекта:
 
